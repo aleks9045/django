@@ -5,10 +5,9 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Главная страница</title>
+  <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-  <h1>Это главная страница</h1>
-  <p>Вы можете перейти на <a href="/about_us">страницу о нас</a></p>
+  {% block content %}{% endblock %}
 </body>
 </html>

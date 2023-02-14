@@ -1,0 +1,18 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+{{title}}
+{% endblock %}
+
+{% block content %}
+  <h1>Мы костыли</h1>
+  <p>Вы можете перейти на <a href="/">главную страницу</a></p>
+  {% for i in info %}
+    <p>Участник</p>
+    <h3>{{i.name}}</h3>
+    <h3>{{i.name2}}</h3>
+    <h3>{{i.age}}</h3>
+    <h3>{{i.sex}}</h3>
+  {% endfor %}
+
+{% endblock %}
