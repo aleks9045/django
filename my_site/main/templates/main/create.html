@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+{{title}}
+{% endblock %}
+
+{% block content %}
+  <h1>Это страница создания</h1>
+  <form  method="post">
+      {% csrf_token %}
+      {{ form.name }}<br>
+      {{ form.name2 }}<br>
+      {{ form.age }}<br>
+      {{ form.sex }}<br>
+      <button type="submit"> Окей </button>
+  </form>
+{% endblock %}
